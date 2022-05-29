@@ -43,9 +43,9 @@ namespace LTWin_Last
             this.btn_KH.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_KH.Image = ((System.Drawing.Image)(resources.GetObject("btn_KH.Image")));
             this.btn_KH.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_KH.Location = new System.Drawing.Point(69, 151);
+            this.btn_KH.Location = new System.Drawing.Point(138, 197);
             this.btn_KH.Name = "btn_KH";
-            this.btn_KH.Size = new System.Drawing.Size(206, 75);
+            this.btn_KH.Size = new System.Drawing.Size(327, 160);
             this.btn_KH.TabIndex = 3;
             this.btn_KH.Text = "Khách hàng";
             this.btn_KH.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -58,9 +58,9 @@ namespace LTWin_Last
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(69, 307);
+            this.button1.Location = new System.Drawing.Point(138, 425);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(206, 75);
+            this.button1.Size = new System.Drawing.Size(327, 152);
             this.button1.TabIndex = 4;
             this.button1.Text = "Khách hàng";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -73,9 +73,9 @@ namespace LTWin_Last
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(472, 151);
+            this.button2.Location = new System.Drawing.Point(668, 197);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(206, 75);
+            this.button2.Size = new System.Drawing.Size(291, 160);
             this.button2.TabIndex = 5;
             this.button2.Text = "Khách hàng";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -88,9 +88,9 @@ namespace LTWin_Last
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(472, 307);
+            this.button3.Location = new System.Drawing.Point(668, 425);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(206, 75);
+            this.button3.Size = new System.Drawing.Size(291, 152);
             this.button3.TabIndex = 6;
             this.button3.Text = "Khách hàng";
             this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -102,8 +102,8 @@ namespace LTWin_Last
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Baskerville Old Face", 22.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label7.Location = new System.Drawing.Point(284, 62);
+            this.label7.ForeColor = System.Drawing.SystemColors.Info;
+            this.label7.Location = new System.Drawing.Point(485, 90);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(162, 43);
             this.label7.TabIndex = 37;
@@ -114,7 +114,7 @@ namespace LTWin_Last
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::LTWin_Last.Properties.Resources.css_gradient;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1182, 753);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);

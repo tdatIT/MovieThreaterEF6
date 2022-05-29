@@ -30,11 +30,11 @@ namespace LTWin_Last
         private void InitializeComponent()
         {
             this.label9 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.start_year = new System.Windows.Forms.TextBox();
+            this.btn_Add = new System.Windows.Forms.Button();
+            this.year = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.start_month = new System.Windows.Forms.TextBox();
-            this.start_day = new System.Windows.Forms.TextBox();
+            this.month = new System.Windows.Forms.TextBox();
+            this.day = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtPhoneNumber = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -50,6 +50,7 @@ namespace LTWin_Last
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.label9.Location = new System.Drawing.Point(63, 25);
@@ -57,24 +58,25 @@ namespace LTWin_Last
             this.label9.Size = new System.Drawing.Size(295, 45);
             this.label9.TabIndex = 30;
             this.label9.Text = "Thêm Khách Hàng";
+            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
-            // button1
+            // btn_Add
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(126, 378);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(127, 35);
-            this.button1.TabIndex = 31;
-            this.button1.Text = "Thêm";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_Add.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Add.Location = new System.Drawing.Point(126, 378);
+            this.btn_Add.Name = "btn_Add";
+            this.btn_Add.Size = new System.Drawing.Size(127, 35);
+            this.btn_Add.TabIndex = 31;
+            this.btn_Add.Text = "Thêm";
+            this.btn_Add.UseVisualStyleBackColor = true;
             // 
-            // start_year
+            // year
             // 
-            this.start_year.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.start_year.Location = new System.Drawing.Point(314, 150);
-            this.start_year.Name = "start_year";
-            this.start_year.Size = new System.Drawing.Size(59, 30);
-            this.start_year.TabIndex = 13;
+            this.year.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.year.Location = new System.Drawing.Point(314, 150);
+            this.year.Name = "year";
+            this.year.Size = new System.Drawing.Size(59, 30);
+            this.year.TabIndex = 13;
             // 
             // label1
             // 
@@ -86,21 +88,21 @@ namespace LTWin_Last
             this.label1.TabIndex = 30;
             this.label1.Text = "Giá trị";
             // 
-            // start_month
+            // month
             // 
-            this.start_month.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.start_month.Location = new System.Drawing.Point(277, 150);
-            this.start_month.Name = "start_month";
-            this.start_month.Size = new System.Drawing.Size(31, 30);
-            this.start_month.TabIndex = 12;
+            this.month.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.month.Location = new System.Drawing.Point(277, 150);
+            this.month.Name = "month";
+            this.month.Size = new System.Drawing.Size(31, 30);
+            this.month.TabIndex = 12;
             // 
-            // start_day
+            // day
             // 
-            this.start_day.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.start_day.Location = new System.Drawing.Point(232, 150);
-            this.start_day.Name = "start_day";
-            this.start_day.Size = new System.Drawing.Size(39, 30);
-            this.start_day.TabIndex = 11;
+            this.day.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.day.Location = new System.Drawing.Point(232, 150);
+            this.day.Name = "day";
+            this.day.Size = new System.Drawing.Size(39, 30);
+            this.day.TabIndex = 11;
             // 
             // txtName
             // 
@@ -163,10 +165,10 @@ namespace LTWin_Last
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.radioNu);
             this.panel1.Controls.Add(this.radioNam);
-            this.panel1.Controls.Add(this.start_year);
+            this.panel1.Controls.Add(this.year);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.start_month);
-            this.panel1.Controls.Add(this.start_day);
+            this.panel1.Controls.Add(this.month);
+            this.panel1.Controls.Add(this.day);
             this.panel1.Controls.Add(this.txtName);
             this.panel1.Controls.Add(this.txtPhoneNumber);
             this.panel1.Controls.Add(this.label8);
@@ -207,7 +209,7 @@ namespace LTWin_Last
             this.BackgroundImage = global::LTWin_Last.Properties.Resources.css_gradient;
             this.ClientSize = new System.Drawing.Size(437, 447);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_Add);
             this.Controls.Add(this.panel1);
             this.Name = "Add_Customercs";
             this.Text = "Add_Customercs";
@@ -221,11 +223,11 @@ namespace LTWin_Last
         #endregion
 
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox start_year;
+        private System.Windows.Forms.Button btn_Add;
+        private System.Windows.Forms.TextBox year;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox start_month;
-        private System.Windows.Forms.TextBox start_day;
+        private System.Windows.Forms.TextBox month;
+        private System.Windows.Forms.TextBox day;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.TextBox txtPhoneNumber;
         private System.Windows.Forms.Label label8;

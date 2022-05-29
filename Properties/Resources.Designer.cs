@@ -63,6 +63,16 @@ namespace LTWin_Last.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Archery_Target_icon {
+            get {
+                object obj = ResourceManager.GetObject("Archery-Target-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap css_gradient {
             get {
                 object obj = ResourceManager.GetObject("css-gradient", resourceCulture);

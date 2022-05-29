@@ -53,12 +53,13 @@ namespace LTWin_Last
             this.Time,
             this.Rating,
             this.RoomID});
-            this.dataGridView1.Location = new System.Drawing.Point(68, 97);
+            this.dataGridView1.Location = new System.Drawing.Point(68, 96);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(667, 213);
             this.dataGridView1.TabIndex = 37;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // TenPhim
             // 
@@ -100,6 +101,7 @@ namespace LTWin_Last
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(62, 56);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(139, 32);
