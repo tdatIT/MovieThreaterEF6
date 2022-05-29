@@ -101,9 +101,9 @@
       <DependentUpon>Premiere.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
-     </Compile>
+
     <Compile Include="Properties\AssemblyInfo.cs" />
-   </Compile>
+ 
     <Compile Include="Suat.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,7 +130,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Customer.resx">
       <DependentUpon>Customer.cs</DependentUpon>
-
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
